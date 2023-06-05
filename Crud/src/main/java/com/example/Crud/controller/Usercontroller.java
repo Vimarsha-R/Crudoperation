@@ -30,6 +30,8 @@ public class Usercontroller {
     }
 
     @PostMapping("/addusers") //adding
+
+
     public ResponseEntity<User> saveUser(@RequestBody @Valid UserReq userReq) throws DuplicationException {
 
         String name= userReq.getName();
